@@ -1,0 +1,39 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea
+
+### Kotlin ###
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### WebView2 browser cache (user-data directory) ###
+.webview/
+### Mac OS ###
+.DS_Store
+
+### Generated JavaScript / Sourcemaps / Declarations ###
+*.js.map
+*.d.ts
