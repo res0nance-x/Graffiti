@@ -59,7 +59,7 @@ fun cli(args: Array<String>) {
 	}
 	println("Server identity: ${p2p.serverIdentity.key.name}")
 	if (serverOnly) {
-		val startPort = p2pPort ?: 1337
+		val startPort = p2pPort ?: 38214
 		p2p.defaultP2PPort = startPort
 		p2p.startTCPServer(startPort)
 		val actualP2PPort = p2p.serverPort ?: startPort
@@ -116,7 +116,9 @@ fun cli(args: Array<String>) {
 	if (useBrowserFallback) {
 		println("Opening browser at $url")
 		try {
-			if (java.awt.Desktop.isDesktopSupported() && java.awt.Desktop.getDesktop().isSupported(java.awt.Desktop.Action.BROWSE)) {
+			if (java.awt.Desktop.isDesktopSupported() && java.awt.Desktop.getDesktop()
+					.isSupported(java.awt.Desktop.Action.BROWSE)
+			) {
 				java.awt.Desktop.getDesktop().browse(java.net.URI(url))
 			} else {
 				System.err.println("Please open the following URL in your browser: $url")
